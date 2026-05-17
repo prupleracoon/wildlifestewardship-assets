@@ -1,0 +1,45 @@
+.tabs-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left tabs */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.tab-link {
+    padding: 12px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.tab-link:hover {
+    background: #ddd;
+}
+
+.tab-link.active {
+    background: #2ecc71;
+    color: #fff;
+}
+
+/* Right content (green box) */
+.tab-content-container {
+    flex: 1;
+    background: #2ecc71;
+    padding: 20px;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
